@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.banner{
+  background-image: url(../images/banner.jpeg);
+  height: 50vh;
+  text-align: center;
+  background-position: center;
+  color: white;
+}
+
+.banner h1{
+  padding-top: 40px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.banner p{
+font-size: 25px;
+}
