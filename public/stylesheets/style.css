@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px; 
+  
 }
 
 a {
@@ -9,18 +13,76 @@ a {
 
 .banner{
   background-image: url(../images/banner.jpeg);
-  height: 50vh;
+  height: 70vh;
   text-align: center;
   background-position: center;
   color: white;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
 }
 
 .banner h1{
-  padding-top: 40px;
+  padding-top: 90px;
   font-size: 50px;
   text-align: center;
+  font-family: 'Lobster', cursive;
 }
 
 .banner p{
 font-size: 25px;
+}
+
+.posts{
+  display: -ms-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 30px;
+  padding-left: 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.posts h2{
+  color: black;
+  font-size: 20px;
+}
+
+.posts p{
+  color: black;
+}
+
+h5{
+  color: gray;
+  font-size: 10px;
+}
+
+.posts img{
+  width: 300px;
+  height: 350px;
+  border: 2px solid grey;
+}
+
+/* form styling */
+.sign-up{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.field{
+  margin-left: 90px;
+  margin-right: 90px;
+  
+}
+
+.form{
+  background-color: rgb(19, 15, 15);
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.control input{
+  background-color: grey;
+  
 }
