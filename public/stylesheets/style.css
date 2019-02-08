@@ -33,13 +33,18 @@ font-size: 25px;
 }
 
 .posts{
-  display: -ms-grid;
+  display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 30px;
   padding-left: 20px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 
+}
+
+.post{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .posts h2{
@@ -85,4 +90,10 @@ h5{
 .control input{
   background-color: grey;
   
+}
+
+#create{
+  color: grey;
+  font-family: 'Raleway', sans-serif;
+
 }

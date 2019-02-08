@@ -5,9 +5,10 @@
 
 
 <div class="field">
+    <form method="POST" action="/home">
     <p class="control has-icons-left has-icons-right">
         <label for="">Name</label>
-        <input class="input" type="name" placeholder="name">
+        <input class="input" type="name" placeholder="name" required>
         <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
         </span>
@@ -21,7 +22,7 @@
 
     <p class="control has-icons-left has-icons-right">
         <label for="">Email</label>
-        <input class="input" type="email" placeholder="Email">
+        <input class="input" type="email" placeholder="Email" required>
         <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
         </span>
@@ -32,7 +33,7 @@
 </div>
 <div class="field">
     <p class="control has-icons-left">
-        <label for="">Password</label>
+        <label for="">Password</label required>
         <input class="input" type="password" placeholder="Password">
         <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
@@ -40,10 +41,12 @@
     </p>
 </div>
 <div class="field">
-    <p class="control">
-        <button class="button is-success">
+    <a class="control" href="/home">
+        <button class="button is-success" >
             Sign up
         </button>
-    </p>
+    </a>
+    </div>
+</form>
 </div>
 </div>
