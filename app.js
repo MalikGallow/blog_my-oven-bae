@@ -38,24 +38,24 @@ app.get('/create', (req, res) => {
  });
 
 //  registration form
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.resolve(__dirname, 'public')));
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(express.static(path.resolve(__dirname, 'public')));
 
-app.post('/create', function (req, res) {
-    dbConn.then(function(db) {
-        delete req.body._id; // for safety reasons
-        db.collection('feedbacks').insertOne(req.body);
-    });    
-    res.send('Data received:\n' + JSON.stringify(req.body));
-});
+// app.post('/create', function (req, res) {
+//     dbConn.then(function(db) {
+//         delete req.body._id; // for safety reasons
+//         db.collection('feedbacks').insertOne(req.body);
+//     });    
+//     res.send('Data received:\n' + JSON.stringify(req.body));
+// });
 
-app.get('/db.json',  function(req, res) {
-    dbConn.then(function(db) {
-        db.collection('feedbacks').find({}).toArray().then(function(feedbacks) {
-            res.status(200).json(feedbacks);
-        });
-    });
-});
+// app.get('/db.json',  function(req, res) {
+//     dbConn.then(function(db) {
+//         db.collection('feedbacks').find({}).toArray().then(function(feedbacks) {
+//             res.status(200).json(feedbacks);
+//         });
+//     });
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
