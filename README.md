@@ -43,6 +43,6 @@
 
          - All rights reserved Abdul Malik Gallow 2019 
          
-     -Live Link:https://malikgallow.github.io/blog_my-oven-bae/
+     -Live Link:http://blog-blogs.7e14.starter-us-west-2.openshiftapps.com/
 
 
